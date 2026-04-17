@@ -1,17 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-@import "tailwindcss"; 
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
 
 @theme {
-  --font-display:'Bungee',sans-serif;
-  --breakpoint-3xl:1920px;
-  --color-primary:#FF9324;
+  --font-display: 'Playfair Display', serif;
+  --font-accent: 'Bungee', sans-serif;
+
+  --breakpoint-3xl: 1920px;
+  --color-primary: #FF9324;
 }
 
 @layer base {
   html {
-      font-family: var(--font-display);
+    font-family: var(--font-display);
   }
-  body{
-    background-color:beige;
+
+  body {
+    background-color: beige;
   }
+}
+
+/* Optional class */
+.bungee {
+  font-family: var(--font-accent);
 }
